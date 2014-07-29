@@ -4,7 +4,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
-	
+
+    <display-name>Spring Web MVC Application</display-name>
+		
     <servlet>
         <servlet-name>index</servlet-name>
         <servlet-class>org.coollalearn.service.IndexServlet</servlet-class>
@@ -13,6 +15,21 @@
         <servlet-name>index</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+
+<servlet>
+  	<servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-class>
+                  org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+  </servlet>
+ 
+  <servlet-mapping>
+ 	<servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+  </servlet-mapping>
+
+
 <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
