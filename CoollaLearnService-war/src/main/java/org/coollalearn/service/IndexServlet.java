@@ -1,4 +1,4 @@
-package com.google.appengine.demos.guestbook;
+package org.coollalearn.service;
 
 import com.google.appengine.api.users.User;
 import com.google.appengine.api.users.UserService;
