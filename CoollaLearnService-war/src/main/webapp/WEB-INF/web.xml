@@ -16,6 +16,15 @@
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
 
+ <servlet>
+        <servlet-name>jquery</servlet-name>
+        <servlet-class>com.efsavage.jquery.servlet.JqueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jquery</servlet-name>
+        <url-pattern>/ext/jquery/js/jquery.js</url-pattern>
+    </servlet-mapping>
+
 <servlet>
   	<servlet-name>mvc-dispatcher</servlet-name>
         <servlet-class>

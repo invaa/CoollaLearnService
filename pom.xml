@@ -46,6 +46,20 @@
 		<version>2.5</version>
 		<scope>provided</scope>
 	</dependency>
+	
+	<!-- including jquery -->
+	<dependency>
+		<groupId>com.efsavage.jquery</groupId>
+		<artifactId>jquery-maven</artifactId>
+		<version>1.8.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>net.disy.jquery</groupId>
+		<artifactId>jquery-ui-custom</artifactId>
+		<version>1.8.2</version>
+	</dependency>
+	
 	</dependencies>
 
   <build>
